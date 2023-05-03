@@ -8,12 +8,13 @@ export class AddContact extends Component {
             <form className='ui form'>
                 <div className='field'>
                     <label>Name</label>
-                    <input type='text' name='name' placeholder='Name'> </input>
+                    <input type='text' name='name' placeholder='Name'/> 
                 </div>
                 <div className='field'>
                     <label>Email</label>
-                    <input type='text' name='email' placeholder='Email'> </input>
+                    <input type='text' name='email' placeholder='Email'/> 
                 </div>
+                <button className='ui button blue'>Add</button>
             </form>
       </div>
     )
