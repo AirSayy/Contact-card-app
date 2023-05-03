@@ -1,5 +1,5 @@
 import React , { useState , useEffect} from 'react'
-import { uuid } from 'uuidv4'
+import {v4} from 'uuid';
 import './App.css';
 import Header from './Header'
 import AddContact from './AddContact'
@@ -11,7 +11,7 @@ function App() {
   const [contacts , setContacts] = useState([])
   
   const addContactHandler = (contact) => {
-    setContacts([...contacts, {id: uuid(), ...contact}])
+    setContacts([...contacts, {id: v4(), ...contact}])
    
   }
   const removeContacthandler =(id) => {
