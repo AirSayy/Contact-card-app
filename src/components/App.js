@@ -27,7 +27,7 @@ function App() {
   }, [contacts])
 
   useEffect(()=> {
-    const retrievedContacts = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY),)
+    const retrievedContacts = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY))
     if(retrievedContacts) setContacts(retrievedContacts)
   }, [])
 
@@ -39,8 +39,8 @@ function App() {
       <Router >
         <Header />
         <Routes>
-        <Route path = '/' Component={ContactList} />
-        <Route path= '/add' Component={AddContact} />
+        <Route path = '/' Component={() => <ContactList contacts={contacts} getContactId={removeContacthandler}/>} />
+        <Route path= '/add' Component={() => <AddContact addContactHandler={addContactHandler} />} />
         {/* //<AddContact addContactHandler={addContactHandler} />
         //<ContactList contacts={contacts} getContactId={removeContacthandler}/> */}
         </Routes>
