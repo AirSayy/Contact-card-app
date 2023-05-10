@@ -36,11 +36,11 @@ function App() {
 
   return (
     <div className='ui container'>
-      <Router 
+      <Router >
       <Header />
       <AddContact addContactHandler={addContactHandler} />
       <ContactList contacts={contacts} getContactId={removeContacthandler}/>
-      />
+      </Router>
      
     </div>
   );
