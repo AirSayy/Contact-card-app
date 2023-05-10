@@ -24,7 +24,7 @@ export class AddContact extends Component {
 
   render() {
     return (
-      <div className='ui main'>
+      <div className='ui '>
             <h2>Add contact</h2>
             <form className='ui form' onSubmit={this.add}>
                 <div className='field'>
