@@ -46,7 +46,7 @@ export class AddContact extends Component {
                     /> 
                 </div>
                 <Link to= '/'>
-                <button className='ui button blue'>Add</button>
+                <button className='ui button blue right'>Add</button>
                 </Link>
                 
             </form>
